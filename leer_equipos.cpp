@@ -28,5 +28,13 @@ int countDevices(FILE *f){
     }
     return cant;
 }
-//Registro getRegister(){
+Registro getRegister(uint16_t Id, Registro *r, int n){
+
+    for(int i=0; i<n; i++){
+        if(r[i].IDs.ID == Id){
+            return r[i];
+        }
+    }
+    
+}
 
